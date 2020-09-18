@@ -1,0 +1,29 @@
+<importscript version="3">
+<variant matno="1609801044" catalogvariantalias="" metallicard_inlay="1"><![CDATA[DEK 5/5 MC NE WS]]></variant>
+<template><![CDATA[DEC 5_5 MC NE WS.mpt]]></template>
+<filter guid="B0836BB4-8DBE-4240-8579-FAC4A920A4DA">
+<fix>0</fix>
+<os>0</os>
+<quote>"</quote>
+<excel>
+<selected_sheet>2</selected_sheet>
+<range_all>true</range_all>
+<range_from/>
+<range_to/>
+</excel>
+<delimiter value="1" keep_delimiters="false">;</delimiter>
+<start_at>1</start_at>
+</filter>
+<sort column="-1" order="1"/>
+<remove column="-1" start="-1"></remove>
+<counter column="-1" multiply="1"/>
+<mapping type="0" projtxt_on_marker="0" marker_row="1"/>
+<field name="PROJECT" type="0" layer_id="1" layer_index="0" marker_row="1" endless_strip_row="0"/>
+<field name="Текст" type="0" layer_id="2" layer_index="0" marker_row="1" endless_strip_row="0" link1="-1" text1="">
+<column special="0">1</column>
+</field>
+<importcount>1</importcount>
+</importscript>
+<!--support for counter-->
+<!--support for normal filter-->
+<!--support for sorting-->
