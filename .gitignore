@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # User defined directories
-материалы\
-полигон\
-.venv\
+materials/
+firingfield/
+legacy/

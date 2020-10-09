@@ -417,27 +417,27 @@ def stage8(mark_data_DDL):
     #     if mark_data_DDL["клеммы"]["Вид2"][i] == "ЗПО":
     #         mark_data_DDL["элементЗПО"]["Текст"].append(mark_data_DDL["клеммы"]["Текст2"][i])
     del mark_data_DDL["клеммы"]
-# Проводники
+# провода
 def stage9(mark_data_DDL):
-    """ Формирование листа "проводники" \n
+    """ Формирование листа "провода" \n
         Обработка: источник -> приёмник \n
         Столбец(лист): Все(провод) -> Адрес(провод) + Сечение(провод)
     """
     # Создание списка уникальных названий групп:
     unique_groups = []
-    for value in mark_data_DDL["проводники"]["Группа"]:
+    for value in mark_data_DDL["провода"]["Группа"]:
         if value not in unique_groups:
             unique_groups.append(value)
     # Создание словаря с группами пустых списков:
     groups_DDL = {}
     for group in unique_groups:
         groups_DDL[group] = {}
-        for key in list(mark_data_DDL["проводники"].keys()):
+        for key in list(mark_data_DDL["провода"].keys()):
             groups_DDL[group][key] = []
     # Заполнение групп пустых списков элементами:
-    for index, value in enumerate(mark_data_DDL["проводники"]["Группа"]):
-        for key in list(mark_data_DDL["проводники"].keys()):
-            groups_DDL[value][key].append(mark_data_DDL["проводники"][key][index])
+    for index, value in enumerate(mark_data_DDL["провода"]["Группа"]):
+        for key in list(mark_data_DDL["провода"].keys()):
+            groups_DDL[value][key].append(mark_data_DDL["провода"][key][index])
 
     # Дублирование записей в каждой группе:
     for group in list(groups_DDL.keys()):
@@ -517,7 +517,7 @@ def stage9(mark_data_DDL):
             conductors[MarkType]["Адрес"].append(r"КОНЕЦ! :–)")
             conductors[MarkType]["Сечение"].append(crs_sep)
             conductors[MarkType]["Тип"].append(MarkType)
-    mark_data_DDL["проводники"] = {"Адрес" : conductors["dual"]["Адрес"] +   conductors["single"]["Адрес"], \
+    mark_data_DDL["провода"] = {"Адрес" : conductors["dual"]["Адрес"] +   conductors["single"]["Адрес"], \
                                  "Сечение" : conductors["dual"]["Сечение"] + conductors["single"]["Сечение"], \
                                      "Тип" : conductors["dual"]["Тип"] +     conductors["single"]["Тип"]}
 
@@ -593,7 +593,7 @@ def proc_mark_file(src, dst):
             stage8(mark_data_DDL)
         except:
             return "Ошибка формата. stage8. Столбец(лист): Текст(клеммы) + Вид(клеммы) -> Текст(элементЗПО) + Текст(элементНПО)"
-    if "проводники" in mark_data_DDL:
+    if "провода" in mark_data_DDL:
         # try:
         stage9(mark_data_DDL)
         # except:
