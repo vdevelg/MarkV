@@ -1,0 +1,11 @@
+git commit -m "Compliance whith PEP8,  add commitplan.txt"
+"Step on the bright side of PEP8, refactoring use of program data, add commitplan.txt"
+
+Issue: На всех листах ячейка A1 должна содержать текст (не число и не пустое значение)
+git commit -m "Remove the restriction on the content of A1 cell on sheets in data file."
+
+Issue: Из строк листа "жилы",       содержащих пустые ячейки в столбцах "Начало" и "Конец" формируются строки в трансферный файл.
+git commit -m ""
+
+Issue: Из строк листа "проводники", содержащих пустые ячейки в столбцах "Начало" и "Конец" формируются маркировочные трубки со сжатым текстом маркировки.
+git commit -m ""
