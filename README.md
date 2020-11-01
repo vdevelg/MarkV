@@ -2,7 +2,7 @@
 MarkV - подготовка текста маркировки электротехнических устройств.  
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MarkV/man/GUI_MarkV.png" alt="GUI_MarkV">
+  <img src="https://raw.githubusercontent.com/vdevelg/MarkV/devel/man/GUI_MarkV.png" alt="GUI MarkV">
 </p>
 
 # Для запуска на Windows:
@@ -16,6 +16,6 @@ MarkV - подготовка текста маркировки электрот�
 > python -m pip install -r requirements.txt
 
 3. Запустить файл:  
-MarkV.pyw
+> MarkV.pyw
 
 4. Нажать кнопку "Справка" для получения справки
