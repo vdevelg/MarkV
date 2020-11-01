@@ -17,7 +17,7 @@ from pyexcel._compact import OrderedDict
 
 
 __progName__ = 'MarkV'   # Name of programm
-__version__ = '2020_08_09'   # Version of programm
+__version__ = '2020_11_02'   # Version of programm
 
 # Themes: 'Default 1', 'DarkTanBlue', 'System Default 1'...
 GUI_THEME = 'System Default 1'
@@ -948,9 +948,9 @@ def gui_main():
          sg.Button('Установить пакет поддержки',
                    size=(26, 1),
                    key='#InstallPack',
-                   pad=((0, layout_distance + 128), (10, layout_range))),
+                   pad=((0, layout_distance + 151), (10, layout_range))),
          sg.Button('Шрифт InconsolataCyr.ttf',
-                   size=(27, 1),
+                   size=(24, 1),
                    key='#InstallFont',
                    pad=((0, 0), (10, layout_range)))
         ],
@@ -986,7 +986,7 @@ def gui_main():
         ]
     ]
 
-    window = sg.Window('{0}   ver. {1}'.format(__progName__,
+    window = sg.Window('{0}, версия {1}'.format(__progName__,
                                                __version__),
                        layout_main_window)
 

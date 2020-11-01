@@ -1,21 +1,21 @@
 # MarkV
-MarkV - program for preparation of marking data for electrical devices.
+MarkV - подготовка текста маркировки электротехнических устройств.  
 
-# dependencies:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MarkV/man/GUI_MarkV.png" alt="GUI_MarkV">
+</p>
 
-* pyexcel
-* pysimplegui
+# Для запуска на Windows:
 
-# to start:
+1. Установить интерпретатор, выбрав опцию "Add Python 3.8 to PATH":
 
-1. Install interpreter:
-https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64.exe
+для 64 битной системы: https://www.python.org/ftp/python/3.8.6/python-3.8.6-amd64.exe  
+для 32 битной системы: https://www.python.org/ftp/python/3.8.6/python-3.8.6.exe
 
-2. Execute in command line:
-> pip install pyexcel  
-> pip install pyexcel-xls  
-> pip install pyexcel-xlsx  
-> pip install pysimplegui  
+2. Выполнить в командной строке:
+> python -m pip install -r requirements.txt
 
-3. Start file:
+3. Запустить файл:  
 MarkV.pyw
+
+4. Нажать кнопку "Справка" для получения справки
