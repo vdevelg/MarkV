@@ -24,7 +24,7 @@
 </extended_filter>
 <counter column="-1" multiply="1"/>
 <mapping type="0" marker_row="1"/>
-<field name="Адрес" type="0" layer_id="2" layer_index="0" marker_row="1" endless_strip_row="1" link1="-1" text1="">
+<field name="Адрес" type="0" layer_id="2" layer_index="0" marker_row="1" endless_strip_row="0" link1="-1" text1="">
 <column special="0">1</column>
 </field>
 <importcount>1</importcount>

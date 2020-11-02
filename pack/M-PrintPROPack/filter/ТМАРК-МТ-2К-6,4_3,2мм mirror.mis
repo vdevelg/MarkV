@@ -1,6 +1,6 @@
 <importscript version="3">
 <variant matno="1513290000" catalogvariantalias="" metallicard_inlay="1"><![CDATA[HSS-HF 4.8-9.5 EL W30M]]></variant>
-<template><![CDATA[HSS-HF 4.8-9.5 EL W30M dual.mpt]]></template>
+<template><![CDATA[HSS-HF 4.8-9.5 EL W30M mirror.mpt]]></template>
 <filter guid="B0836BB4-8DBE-4240-8579-FAC4A920A4DA">
 <fix>0</fix>
 <os>0</os>
@@ -19,7 +19,7 @@
 <and_conjunction col_count="3">true</and_conjunction>
 <filter_items>
 <item col="1" expression="550">4</item>
-<item col="2" expression="555">dual</item>
+<item col="2" expression="555">mirror</item>
 </filter_items>
 </extended_filter>
 <counter column="-1" multiply="1"/>
