@@ -1,5 +1,10 @@
-git commit -m "Compliance whith PEP8,  add commitplan.txt"
-"Step on the bright side of PEP8, refactoring use of program data, add commitplan.txt"
+#done# git commit -m "Step on the bright side of PEP8, refactoring use of program data, add commitplan.txt"
+
+Issue: Пакет поддержки программы M-Print® PRO содержит файл группового импорта с неабстрактными (неуниверсальными) именем, равно как трансферный файл. Также данный пакет содержит файлы импорта устаревшего типа маркировки 'dual' вместо 'mirror'.
+git commit -m "Rename transfer file, update package M-Print® PRO"
+
+Issue: Кнопка "Установить пакет поддержки" не имеет смысла в главном окне и перегружает интерфейс.
+git commit -m "Move the package installation button to the dialog box"
 
 Issue: На всех листах ячейка A1 должна содержать текст (не число и не пустое значение)
 git commit -m "Remove the restriction on the content of A1 cell on sheets in data file."
